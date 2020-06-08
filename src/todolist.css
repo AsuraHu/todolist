@@ -1,0 +1,89 @@
+#root {
+  min-width: 900px;
+  width: 900px;
+  margin: auto;
+}
+body {
+  font-size: 18px;
+}
+.todo-header,
+.todo-footer {
+  height: 60px;
+  background: #666;
+  color: #fff;
+  position: relative;
+}
+/* 头部区 */
+.header-title, .header-input, .header-button {
+  float: left;
+}
+.header-input, .header-button {
+  margin-top: 15px;
+}
+.header-title {
+  margin-left: 50px;
+  margin-right: 100px;
+  color: #fff;
+  font-size: 24px;
+}
+.header-input {
+  width: 350px;
+}
+
+/* 内容区 */
+.todo-content {
+  min-height: 1200px;
+  /* background: rgb(209, 207, 207); */
+  background: rgb(250, 246, 246);
+}
+.unfinished,
+.finish {
+  width: 80%;
+  margin: 50px auto 0;
+  height: 500px;
+}
+.ant-list-item:hover{
+  background: rgb(209, 207, 207);
+}
+.ant-list-item {
+  font-size: 18px;
+  height: 40px;
+  display: block;
+  line-height: 40px;
+  padding: 0 16px !important;
+}
+.floatRight {
+  top: 3px;
+  float: right;
+  margin-left: 20px;
+}
+.finish-btn {
+  background: green;
+  border: none;
+}
+.finish-btn:focus {
+  background: green;
+}
+.delete-btn{
+  background: rgba(255, 2, 2, 0.493);
+  border: none;
+}
+.delete-btn:focus {
+  background: rgba(255, 2, 2, 0.493);
+}
+.event-item {
+  display: inline-block;
+  width: 50%;
+  overflow: hidden;
+  text-overflow: ellipsis; /* 文字字数超过20将会以...表示剩余部分*/
+  user-select: none;/* 文字不可被选中 */
+}
+.event-item:hover {
+  cursor: pointer;
+}
+
+/* 脚部区 */
+.todo-footer {
+  font-size: 18px;
+  text-align: center;
+}
